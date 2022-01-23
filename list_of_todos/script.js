@@ -9,7 +9,7 @@ const newEl = () => {
         stuff.push(newInput);
         let newPost = document.createElement(`div`);
         newPost.className = 'box';
-        newPost.innerHTML = `<h2 onclick='taskDone(this)' >${stuff[clicks - 1]}</h2><p onclick ="deleteThis(this)">X</p>`;
+        newPost.innerHTML = `<h2 onclick='taskDone(this)' >${stuff[clicks - 1]}</h2><p onclick ="deleteThis(this)"> &#10003 </p>`;
         document.getElementById("insert").appendChild(newPost);
         document.getElementById(`userInput`).value = "";
     } else {
