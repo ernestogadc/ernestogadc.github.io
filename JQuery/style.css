@@ -1,0 +1,184 @@
+.color1 {
+    color: #002c29;
+}
+
+.color2 {
+    color: #005d8c;
+}
+
+.color3 {
+    color: #fc6f00;
+}
+
+.color4 {
+    color: #ffd75a;
+}
+
+.color5 {
+    color: #ffffcd;
+}
+
+:root {
+    --background: #e5e5e5;
+    --reminder: #B8DFD8;
+    --very-important: #FFB319;
+    --important: #FFE194;
+    --light: #191919;
+    --dark: #191919;
+    --primary-font: 'Dongle', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif
+}
+
+body {
+    margin: 0%;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--light);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0;
+    text-align: center;
+}
+
+#list {
+    width: 100vw;
+    text-align: center;
+}
+
+#list div {
+    width: 230px;
+    padding: 15px;
+    min-height: 130px;
+    margin: 15px 15px 0 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+#list div:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+#list div button {
+    height: 40px;
+    transition: .3s;
+
+}
+
+#list .listo {
+
+    position: relative;
+    left: 50%;
+    bottom: -40px;
+}
+
+#list #btn_box {
+    width: 180px;
+    min-height: 30px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.listo, .edit {
+    width: 50%;
+    border-radius: 0;
+    font-size: 18px;
+}
+
+#list div .listo:hover {
+    background-color: green;
+    color: var(--background);
+    transition: .3s;
+
+}
+
+#list div .edit:hover {
+    background-color: rgb(59, 59, 182);
+    color: var(--background);
+    transition: .3s;
+
+}
+
+
+
+
+.very {
+    background-color: var(--very-important);
+    color: var(--light);
+}
+
+.important {
+    background-color: var(--important);
+    color: var(--dark);
+}
+
+.reminder {
+    background-color: var(--reminder);
+    color: var(--light);
+}
+
+#form {
+    text-align: center;
+}
+
+#form input {
+    width: 20px;
+    height: 20px;
+
+}
+
+#input_container {
+    text-align: center;
+}
+
+#input {
+    width: 350px;
+    height: 30px;
+    margin-right: -5px;
+    font-size: 22px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: 1px solid var(--dark);
+    padding-left: 10px;
+
+}
+
+#btn {
+    height: 34px;
+    font-size: 25px;
+    max-width: 200px;
+    border: var(--important);
+    background-color: var(--important);
+    transform: translateY(1px);
+    color: var(--dark);
+}
+
+#btn:hover {
+    background-color: var(--very-important);
+    color: var(--light);
+    transition: .3s;
+}
+
+#tema {
+    width: 100vw;
+    height: 40px;
+    background-color: var(--background);
+    border: 1px solid var(--light);
+    font-size: 20px;
+    color: var(--light);
+
+}
+
+#tema:hover {
+    background-color: var(--light);
+    color: var(--reminder);
+}

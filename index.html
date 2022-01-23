@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/93e0055b36.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <nav id='navbar'>
+            <ul>
+                <li><a href='#welcome-section'>About</a></li>
+                <li><a href='#projects'>Work</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id='welcome-section'>
+        <h1>Hey! I am Ernesto</h1>
+        <p>a web developer</p>
+
+    </section>
+
+    <section id='projects'>
+        <h2>This are some of my projects</h2>
+        <div class=project-tile>
+            <a href='./sunnyside/index.html'>
+                <img src='./images/Sunnyside.JPG'>
+                <p><span>
+                        < </span>Sunnyside <span>/></span></p>
+            </a>
+            <a href='./loopstudios-landing-page-main/index.html'>
+                <img src='./images/Loopstudios.JPG'>
+                <p><span>
+                        < </span>Loopstudios <span>/></span></p>
+            </a>
+            <a href='./JQuery/index.html'>
+                <img src='./images/Notes.png'>
+                <p><span>
+                        < </span>Note App <span>/></span></p>
+            </a>
+        </div>
+        <div id="show-all">
+            <a href='./Todolist/index.html'>
+                <img src='./images/Todolist.JPG'>
+                <p><span>
+                        < </span>Todo list<span>/></span></p>
+            </a>
+            <a href='./blogr-landing-page-main/index.html'>
+                <img src='./images/blogr.JPG'>
+                <p><span>
+                        < </span>Blogr <span>/></span></p>
+            </a>
+            <a href='./faq-accordion-card-main/index.html'>
+                <img src='./images/faq.JPG'>
+                <p><span>
+                        < </span>FAQ <span>/></span></p>
+            </a>
+            <a href='./intro-component-with-signup-form-master/index.html'>
+                <img src='./images/intro-comp.JPG'>
+                <p><span>
+                        < </span>Sign-in <span>/></span></p>
+            </a>
+            <a href='./single-price-grid-component-master/index.html'>
+                <img src='./images/price-grid.JPG'>
+                <p><span>
+                        < </span>Price-grid<span>/></span></p>
+            </a>
+            <a href='./profile-card-component-main/index.html'>
+                <img src='./images/Profile card.JPG'>
+                <p><span>
+                        < </span>Profile Card<span>/></span></p>
+            </a>
+            <a href='./canvaclone/index.html'>
+                <img src='./images/canva clone.JPG'>
+                <p><span>
+                        < </span>Canva Clone<span>/></span></p>
+            </a>
+        </div>
+
+
+        <button id='show-btn'>Show all ></button>
+
+    </section>
+
+    <section id='contact'>
+        <h3>Lets work together!</h3>
+        <a href='https://github.com/ernestogdc' id='profile-link' target='_blank'><i
+                class="fab fa-github"></i>Github</a>
+        <a href='https://github.com/ernestogdc' id='profile-link' target='_blank'><i
+                class="fab fa-facebook-f"></i>Facebook</a>
+        <a href='https://twitter.com/home' id='profile-link' target='_blank'><i class="fab fa-twitter"></i>Twitter</a>
+        <p><i class="fab fa-whatsapp"></i> +527775115842</p>
+        <div id='footer'>
+            © Created by Ernesto Garza
+        </div>
+
+    </section>
+    <script>
+        document.getElementById("show-btn").addEventListener('click', () => {
+            if (document.getElementById('show-all').style.display === 'flex') {
+                document.getElementById('show-all').style.display = 'none';
+                document.getElementById('show-btn').innerText = 'Show all >';
+            } else {
+                document.getElementById('show-all').style.display = 'flex';
+                document.getElementById('show-btn').innerText = 'Show less <';
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>
