@@ -224,7 +224,7 @@ span {
   }
 
   #navbar ul {
-    flex-direction: column;
+    justify-content: ;
 
   }
 
