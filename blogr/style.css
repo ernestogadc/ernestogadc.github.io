@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw !important;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .burger {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+span {
+    height: 3px;
+    background-color: white;
+    transition: all .2s ease-in;
+}
+
+.closed {
+    transform: translateY(14px) rotate(45deg);
+    transition: all .2s ease-in;
+}
+
+.closed1 {
+    width: 0;
+    transition: all .2s ease-in;
+}
+
+.closed2 {
+    transform: translateY(-13px) rotate(-45deg);
+    transition: all .2s ease-in;
+}
+
+.top {
+    padding: 30px 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*  font-family: 'Ubuntu', sans-serif; */
+}
+
+.dropContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+}
+
+.dropContent a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dropContent a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropContent a {
+    padding-bottom: 10px;
+}
+
+.menu {
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px -20px black;
+    width: 82vw;
+    margin: auto;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+}
+
+.open {
+    height: 99vh;
+    transition: all .2s ease-in;
+}
+
+.contentShow {
+    background-color: hsl(240, 2%, 79%);
+    display: flex;
+    height: 250px;
+    transition: all .2s ease-in;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.dropdown,
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown button {
+    width: 100%;
+    border: none;
+    padding: 20px 30px;
+    background: none;
+}
+
+.dropdown button:focus {
+    outline: none;
+}
+
+.dropdown:first-child {
+    padding-top: 30px;
+}
+
+.dropdown button img {
+    margin-left: 15px;
+}
+
+.arrowTurn {
+    transform: rotateX(180deg);
+}
+
+.btns {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid hsl(240, 2%, 79%);
+}
+
+.btns button {
+    width: 130px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btns .signUp {
+    color: white;
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    ;
+}
+
+.welcome {
+    width: 100%;
+    margin-bottom: 70px;
+    height: 70vh;
+    padding-top: 120px;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 0 80px;
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+
+.welcome h1 {
+    font-size: 35px;
+    padding: 40px 40px 20px 40px;
+}
+
+.welcome .p {
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 40px 50px 40px;
+}
+
+.freeTrail,
+.learnMore {
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 7px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.freeTrail {
+    color: hsl(356, 100%, 66%);
+}
+
+.learnMore {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid white;
+}
+
+h2 {
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    padding: 50px 50px 20px 50px;
+    font-size: 26px;
+}
+
+p {
+    text-align: center;
+    padding: 10px 38px;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.blue {
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 80px 0 80px;
+    margin-top: 230px;
+    padding-top: 220px;
+    padding-bottom: 120px;
+    text-align: left;
+}
+
+.blue h2,
+.blue p {
+    color: white;
+    z-index: 1;
+}
+
+.blue h2 {
+    font-size: 250%;
+}
+
+#phones {
+    position: absolute;
+    transform: translateY(-420px);
+    z-index: 1;
+}
+
+#circles {
+    width: 98%;
+    z-index: 0;
+    position: absolute;
+    transform: translateY(-320px);
+}
+
+.index {
+    z-index: 1;
+}
+
+footer {
+    color: white;
+    background-color: hsl(240, 10%, 16%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 0 80px 0 0;
+}
+
+footer h1 {
+    font-size: 3rem;
+}
+
+footer a {
+    color: white;
+    margin: 5px;
+}
+
+footer h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .list {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.divider {
+    text-align: center;
+}
+
+@media (min-width:480px) {
+    .blue h2 {
+        margin-top: 80px;
+        transition: 1s;
+    }
+}
+
+@media (min-width:530px) {
+    .blue h2 {
+        margin-top: 180px;
+        transition: 1s;
+    }
+}
+
+@media (min-width:690px) {
+    .blue h2 {
+        margin-top: 280px;
+        transition: 1s;
+    }
+}
+
+@media (min-width:800px) {
+    nav .burger {
+        display: none;
+    }
+    .menu {
+        all: unset;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 5%;
+        transform: translateY(-70px);
+    }
+    .dropdown:first-child {
+        all: unset;
+    }
+    .dropdown {
+        all: unset;
+    }
+    .btns {
+        all: unset;
+        margin-top: 8px;
+    }
+    .dropBtn {
+        color: white;
+    }
+    .dropBtn img {
+        background: white;
+    }
+    .cont {
+        display: flex;
+    }
+    .btns .login {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    .btns .signUp {
+        color: hsl(353, 100%, 62%);
+        background: white;
+    }
+    .firstWhite img {
+        float: right;
+        width: 50%;
+    }
+    footer {
+        flex-direction: row;
+        height: auto;
+    }
+    #laptop {
+        float: left;
+        width: 50vw;
+    }
+    #circles,
+    #phones {
+        float: right;
+        width: 50vw;
+    }
+    .index {
+        float: right;
+        width: 50vw;
+        transform: translateY(-85%);
+    }
+    .blue {
+        height: 130px;
+    }
+}
